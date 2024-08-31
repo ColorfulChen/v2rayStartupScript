@@ -7,3 +7,9 @@ wget https://github.com/MrChenYukun/v2ray/archive/master.tar.gz -O v2ray-master.
 systemctl stop firewalld
 systemctl disable firewalld
 ufw disable
+
+#install qr support
+/usr/bin/apt-get update -y; /usr/bin/apt-get install qrencode -y
+
+#show qr code
+v2ray qr
